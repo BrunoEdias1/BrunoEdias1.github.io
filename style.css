@@ -1,0 +1,264 @@
+body {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  font-family: Arial, Helvetica, sans-serif;
+  height: 1000px;
+  font-size: 2rem;
+}
+
+body header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2.25rem;
+}
+nav .botoes {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  justify-self: end;
+  list-style: none;
+}
+
+.botoes a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  transition: 0.3s;
+}
+.botoes a:hover {
+  background-color: rgba(255, 248, 239, 0.849);
+  border-radius: 0.5rem;
+}
+
+body main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* max-width: ;s */
+}
+
+main img {
+  max-width: 50%;
+  margin: 3rem;
+  justify-self: center;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+  justify-items: center;
+}
+.introducao h1::before {
+  content: url("img/detalhe.svg");
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: relative;
+  top: 6.5rem;
+  right: 1.5rem;
+}
+.introducao h1 {
+  font-size: 4rem;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+}
+
+.experienciaText {
+  display: flex;
+  word-break: break-all;
+  align-items: center;
+  justify-self: end;
+  color: #7f7f7f77;
+  font-size: 8rem;
+  padding: 1rem;
+}
+
+.experienciaText h1 {
+  text-align: right;
+}
+
+.experiencia {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.exp-intro {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* place-self: start; */
+}
+
+.exp-intro p,
+.form-intro p {
+  text-align: center;
+  word-break: break-all;
+
+  padding: 0.9rem;
+  font-size: 1.5rem;
+}
+
+.experiencia li {
+  list-style: none;
+}
+
+.experiencia-01,
+.experiencia-02,
+.experiencia-03 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(233, 233, 233);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.experiencia-01 ul,
+.experiencia-02 ul,
+.experiencia-03 ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 0;
+  justify-content: start;
+}
+
+.experiencia-01 li,
+.experiencia-02 li,
+.experiencia-03 li {
+  border-radius: 5px;
+  padding: 2px;
+  background-color: white;
+}
+.experiencia-01 p,
+.experiencia-02 p,
+.experiencia-03 p {
+  margin: 2px;
+  font-size: 0.9rem;
+}
+.experiencia-01 h2,
+.experiencia-02 h2,
+.experiencia-03 h2 {
+  margin: 0px;
+}
+
+.bikcraft::before,
+.surfbot::before,
+.brafe::before {
+  display: flex;
+  content: "2025";
+  position: relative;
+  width: 10px;
+  height: 10px;
+  left: -70px;
+  bottom: -40px;
+  background-color: antiquewhite;
+}
+
+.experiencia-01:hover,
+.experiencia-02:hover,
+.experiencia-03:hover {
+  border-left: 4px solid green;
+  border-right: 4px solid green;
+}
+
+.formacao {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 10px;
+}
+
+#teste01 {
+  background-color: rgba(26, 26, 26, 0.945);
+  padding: 2rem;
+}
+
+#teste01 p {
+  color: rgb(124, 119, 119);
+  text-align: center;
+  justify-items: end;
+}
+#teste01 p strong {
+  color: rgb(255, 255, 255);
+}
+
+.experienciaText2 {
+  display: flex;
+
+  align-items: center;
+  justify-self: end;
+  color: black;
+  font-size: 8rem;
+  padding: 1rem;
+}
+
+.experienciaText2::before {
+  content: url("img/detalhe.svg");
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  top: 19rem;
+  right: 2.5rem;
+}
+
+.formacao-01,
+.formacao-02,
+.formacao-03 {
+  padding: 1rem;
+  display: grid;
+  background-color: black;
+  border-radius: 1rem;
+  border: 0.4rem solid transparent;
+  transition: 0.3s;
+}
+
+.formacao-01 h2,
+.formacao-02 h2,
+.formacao-03 h2 {
+  color: white;
+}
+
+.formacao-01:hover,
+.formacao-02:hover,
+.formacao-03:hover {
+  border: 0.4rem solid white;
+}
+
+#teste02 {
+  background-color: black;
+  color: rgb(124, 119, 119);
+}
+
+.rodape {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+}
+#rodape {
+  font-size: 2rem;
+  place-self: center;
+}
+
+#rodape2 li {
+  list-style: none;
+  color: white;
+  place-self: center;
+}
+
+#rodape2 li a {
+  color: white;
+  text-decoration: none;
+}
